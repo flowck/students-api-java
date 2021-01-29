@@ -1,4 +1,4 @@
-package me.changani.demo;
+package me.changani.studentsystem;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,10 +13,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EntityScan({"me.changani.entity"})
 @EnableJpaRepositories("me.changani.repository")
 @ComponentScan({"me.changani.controller", "me.changani.service"})
-public class DemoApplication {
+public class StudentsSystemApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(StudentsSystemApplication.class, args);
 	}
 
 }
