@@ -6,10 +6,13 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+@EnableSwagger2
 @SpringBootApplication
-@ComponentScan({"me.changani.controller", "me.changani.service"})
 @EntityScan({"me.changani.entity"})
 @EnableJpaRepositories("me.changani.repository")
+@ComponentScan({"me.changani.controller", "me.changani.service"})
 public class DemoApplication {
 
 	public static void main(String[] args) {
